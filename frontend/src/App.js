@@ -1,37 +1,33 @@
 import React from 'react';
+import {BrowserRouter, Link, Route, Router, Switch} from 'react-router-dom'
+import Home from './pages/Home';
+import Information from './pages/Information';
+import data from './data.js'
+
 
 function App() {
-  return (
+  return (    
+    <BrowserRouter>
     <div className='grid'> 
       <header className="row">
           <div>
-              <a className="logo" href="index.html"> JNN Store</a>
+            <Link to='/' className="logo">JNN Store</Link>
           </div>
-          <div>
-              
-              <a href="signin.html"> Sign In</a>
-              <a href="info.html"> Info</a>
+          <div>  
+              <Link to='/signin'>Sign In</Link>
+              <Link to='/Information'>Information</Link>
           </div>
       </header>
       <main>
-        <div className="row center">
-          <div className="item">
-            <a href="product.html">
-              <img className="small" src="./images/bed.png" alt=""></img>
-            </a>
-            <div className="item-body">
-              <h2> Item</h2>
-              <div className="price">
-                  <h2>$10</h2>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Switch>
+          <Route path='/' component={Home} exact></Route>
+          <Route path='/Information' component={Information}></Route>
+        </Switch>
       </main>
 
       <footer className="row center"> All Rights Reserved</footer>
     </div>
-    
+    </BrowserRouter>
   );
 }
 
