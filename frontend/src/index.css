@@ -35,15 +35,25 @@ img{
 }
 
 img.small{
+
+  min-height: 16rem;
+  min-width: 16rem;
   max-width: 16rem;
+  max-height: 16rem;
 }
 
 img.medium{
+  min-height: 29rem;
+  min-width: 29rem;
   max-width: 29rem;
+  max-height: 29rem;
 }
 
 img.large{
+  min-height: 44rem;
+  min-width: 44rem;
   max-width: 44rem;
+  max-height: 44rem;
 }
 
 a.logo{

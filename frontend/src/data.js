@@ -7,9 +7,9 @@ export default {
             price: 10
         },
         {
-            name: 'item_two',
+            name: 'dawg',
             id: 2,
-            image: './images/bed.png',
+            image: './images/handsup.jpg',
             price: 12000
         },
         {
