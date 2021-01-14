@@ -13,9 +13,21 @@ export default function Item(props) {
                 <img className="large" src={"./."+item.image} alt="something"></img>
             </div>
             <div>
-                <button>
-                    Buy
-                </button>
+                <ul className="details" >
+                    <li>
+                        <div>
+                            Description:
+                            {item.description}
+                        </div>
+
+                    </li>
+                    <li>
+                        <button>
+                            Buy
+                        </button>
+                    </li>
+                </ul>
+
             </div>
         </div>
     )

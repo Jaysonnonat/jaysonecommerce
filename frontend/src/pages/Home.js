@@ -13,7 +13,6 @@ export default function Home() {
                <img className="small" src={item.image} alt=""></img>
               </Link>
 
-
               <div className="item-body">
                 <div> {item.name}</div>
                 <div className="price">
