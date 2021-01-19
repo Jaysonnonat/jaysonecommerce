@@ -19,9 +19,14 @@ export default function Item(props) {
                             Description:
                             {item.description}
                         </div>
-
                     </li>
                     <li>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
                         <button>
                             Buy
                         </button>

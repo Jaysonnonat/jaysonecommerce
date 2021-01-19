@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Link, Route, Router, Switch} from 'react-router-dom'
 import Home from './pages/Home';
 import ItemPage from './pages/ItemPage';
-import Information from './pages/Information';
+import Cart from './pages/Cart';
 
 function App() {
   return (    
@@ -14,14 +14,14 @@ function App() {
           </div>
           <div>  
             <Link to='/signin'>Sign In</Link>
-            <Link to='/Information'>Information</Link>
+            <Link to='/cart'>Shopping Cart</Link>
           </div>
       </header>
       <main>
         <Switch>
           <Route path='/' component={Home} exact></Route>
           <Route path='/item/:id' component={ItemPage}></Route>
-          <Route path='/Information' component={Information}></Route>
+          <Route path='//cart/:id?' component={Cart}></Route>
         </Switch>
       </main>
 

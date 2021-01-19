@@ -50,9 +50,9 @@ img.medium{
 }
 
 img.large{
-  min-height: 44rem;
-  min-width: 44rem;
-  max-width: 44rem;
+  min-height: 29rem;
+  min-width: 29rem;
+  max-width: auto;
   max-height: 44rem;
 }
 
@@ -116,4 +116,9 @@ footer{
   max-width: 10rem;
   max-height: 10rem;
   display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.details li{
+  margin-left: 4rem;
 }
