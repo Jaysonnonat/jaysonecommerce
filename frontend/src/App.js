@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom'
-import Home from './pages/Home';
-import ItemPage from './pages/ItemPage';
-import Cart from './pages/Cart';
+import Home from './components/Home';
+import ItemPage from './components/ItemPage';
+import Checkout from './components/Checkout';
 
 function App() {
   return (    
@@ -14,14 +14,14 @@ function App() {
           </div>
           <div>  
             <Link to='/signin'>Sign In</Link>
-            <Link to='/cart'>Shopping Cart</Link>
+            <Link to='/checkout'>Shopping Cart</Link>
           </div>
       </header>
       <main>
         <Switch>
           <Route path='/' component={Home} exact></Route>
           <Route path='/item/:id' component={ItemPage}></Route>
-          <Route path='/cart/:id?' component={Cart}></Route>
+          <Route path='/checkout/:id?' component={Checkout}></Route>
         </Switch>
       </main>
 

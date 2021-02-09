@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import data from './../data.js'
+import { data } from './../data.js'
 
 export default function Home() {
     return (

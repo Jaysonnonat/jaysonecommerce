@@ -1,9 +1,9 @@
 import React from 'react'
-import data from './../data.js'
+import {data} from '../data.js'
 
 export default function Item(props) {
     console.log(props.match.params.id);
-    const item  = data.items.find(item => item.id == props.match.params.id);
+    const item  = data.items.find(item => parseInt(item.id)  === parseInt(props.match.params.id) );
     return (
         <div className="row center">
             <div>
